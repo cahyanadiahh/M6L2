@@ -32,5 +32,12 @@ async def on_message(message):
     # Menghapus gambar setelah dikirim
     os.remove(file_path)
 
+@bot.command
+async def start(ctx):
+    await ctx.send (""
+       Halo, selmata datang di bot penghasil gambar,
+       Cara pakai : kamu tuliskan promt di kolom chat lalu kamu tekan enter.
+       Gambar kamu akan di kirim ketika sudah selesai dibuat."")             
+
 # Menjalankan bot
 bot.run(TOKEN)
